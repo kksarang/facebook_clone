@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../assets.dart';
 import 'avathar.dart';
 import 'blueTick.dart';
 
@@ -9,8 +8,15 @@ class PostCard extends StatelessWidget {
   final String avathar;
   final String name;
   final String publishAt;
+  final String postTitle;
+  final String postImage;
 
-  PostCard({required this.avathar, required this.name, required this.publishAt});
+  PostCard(
+      {required this.avathar,
+      required this.name,
+      required this.publishAt,
+      required this.postTitle,
+      required this.postImage});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,7 +27,50 @@ class PostCard extends StatelessWidget {
           const SizedBox(
             height: 4,
           ),
-          imagePosting()
+          imagePosting(),
+          const SizedBox(
+            height: 10,
+          ),
+          footerSection()
+        ],
+      ),
+    );
+  }
+
+  Widget footerSection() {
+    return Container(
+      height: 50,
+      child: Row(
+        children: [
+          const SizedBox(
+            width: 20,
+          ),
+          const Icon(
+            Icons.thumb_up,
+            color: Colors.blue,
+            size: 20,
+          ),
+          const SizedBox(
+            width: 6,
+          ),
+          Text(
+            '14k',
+            style: TextStyle(color: Colors.grey[700], fontSize: 16),
+          ),
+          const SizedBox(
+            width: 90,
+          ),
+          Text(
+            '100 Comments',
+            style: TextStyle(color: Colors.grey[700], fontSize: 16),
+          ),
+          const SizedBox(
+            width: 90,
+          ),
+          Text(
+            'Share',
+            style: TextStyle(color: Colors.grey[700], fontSize: 16),
+          )
         ],
       ),
     );
@@ -30,7 +79,7 @@ class PostCard extends StatelessWidget {
   Widget imagePosting() {
     return Container(
       child: Image.network(
-        aappu,
+        postImage,
       ),
     );
   }
@@ -38,13 +87,13 @@ class PostCard extends StatelessWidget {
   Widget titleSelection() {
     return Container(
       child: Row(
-        children: const [
-          SizedBox(
+        children: [
+          const SizedBox(
             width: 20,
           ),
           Text(
-            "Happy Birthday",
-            style: TextStyle(color: Colors.black, fontSize: 16),
+            postTitle == null ? "" : postTitle,
+            style: const TextStyle(color: Colors.black, fontSize: 16),
           ),
         ],
       ),
@@ -54,7 +103,7 @@ class PostCard extends StatelessWidget {
   Widget postCardHeader() {
     return ListTile(
       leading: Avathar(
-        displayImageName: networkThree,
+        displayImageName: avathar,
         displayStatus: false,
       ),
       title: Row(
