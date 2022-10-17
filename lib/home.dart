@@ -1,3 +1,5 @@
+import 'package:facebook_clone/sections/headerButtonSection.dart';
+import 'package:facebook_clone/sections/statusSection.dart';
 import 'package:facebook_clone/widgets/appBarButton.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +29,24 @@ class Home extends StatelessWidget {
               },
               buttonIcon: Icons.chat_bubble_outline,
             )
+          ],
+        ),
+        backgroundColor: Colors.white,
+        body: ListView(
+          children: [
+            const SizedBox(
+              height: 2,
+            ),
+            const StatusSection(),
+            Divider(
+              thickness: 1,
+              color: Colors.grey.shade300,
+            ),
+            HeaderButtonSection(),
+            Divider(
+              thickness: 10,
+              color: Colors.grey.shade300,
+            ),
           ],
         ),
       ),
