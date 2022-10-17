@@ -27,7 +27,7 @@ class RoomSection extends StatelessWidget {
                   color: Colors.purple,
                 ),
                 SizedBox(
-                  width: 5,
+                  width: 10,
                 ),
                 Text(
                   "Create\nRoom",
