@@ -21,5 +21,5 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
+![Simulator Screen Shot - iPhone 14 Pro Max - 2022-10-17 at 19 50 17](https://user-images.githubusercontent.com/74540209/196202425-b87b6254-eab1-423a-9cb1-34f235340105.png)
 
-![Uploading Simulator Screen Shot - iPhone 14 Pro Max - 2022-10-17 at 19.18.48.png…]()
