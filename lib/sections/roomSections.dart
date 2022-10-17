@@ -19,13 +19,34 @@ class RoomSection extends StatelessWidget {
           const SizedBox(
             width: 5,
           ),
-          Avathar(displayImageName: networkTwo),
-          Avathar(displayImageName: networkThree),
-          Avathar(displayImageName: networkFour),
-          Avathar(displayImageName: networkFive),
-          Avathar(displayImageName: six),
-          Avathar(displayImageName: aappu),
-          Avathar(displayImageName: networkOne),
+          Avathar(
+            displayImageName: networkTwo,
+            displayStatus: true,
+          ),
+          Avathar(
+            displayImageName: networkThree,
+            displayStatus: true,
+          ),
+          Avathar(
+            displayImageName: networkFour,
+            displayStatus: true,
+          ),
+          Avathar(
+            displayImageName: networkFive,
+            displayStatus: true,
+          ),
+          Avathar(
+            displayImageName: six,
+            displayStatus: true,
+          ),
+          Avathar(
+            displayImageName: aappu,
+            displayStatus: true,
+          ),
+          Avathar(
+            displayImageName: networkOne,
+            displayStatus: true,
+          ),
         ],
       ),
     );
@@ -33,7 +54,7 @@ class RoomSection extends StatelessWidget {
 
   Widget createRoom() {
     return Container(
-      padding: EdgeInsets.only(left: 5, right: 5),
+      padding: EdgeInsets.only(left: 6, right: 6),
       decoration: BoxDecoration(
         border: Border.all(width: 1, color: Colors.green),
         borderRadius: BorderRadius.all(Radius.circular(20)),

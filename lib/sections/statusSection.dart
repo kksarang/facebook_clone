@@ -12,6 +12,7 @@ class StatusSection extends StatelessWidget {
     return ListTile(
       leading: Avathar(
         displayImageName: networkOne,
+        displayStatus: false,
       ),
       title: const TextField(
         decoration: InputDecoration(
