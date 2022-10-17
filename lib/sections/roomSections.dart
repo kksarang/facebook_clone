@@ -10,36 +10,40 @@ class RoomSection extends StatelessWidget {
       height: 70,
       child: ListView(
         scrollDirection: Axis.horizontal,
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         children: [
-          Container(
-            decoration: BoxDecoration(
-              border: Border.all(width: 1, color: Colors.deepPurpleAccent),
-              borderRadius: BorderRadius.all(Radius.circular(20)),
-            ),
-            child: Row(
-              children: const [
-                SizedBox(
-                  width: 5,
-                ),
-                Icon(
-                  Icons.video_call,
-                  color: Colors.purple,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  "Create\nRoom",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 14, color: Colors.black),
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-              ],
-            ),
-          )
+          createRoom(),
+        ],
+      ),
+    );
+  }
+
+  Widget createRoom() {
+    return Container(
+      decoration: BoxDecoration(
+        border: Border.all(width: 1, color: Colors.green),
+        borderRadius: BorderRadius.all(Radius.circular(20)),
+      ),
+      child: Row(
+        children: const [
+          SizedBox(
+            width: 6,
+          ),
+          Icon(
+            Icons.video_call,
+            color: Colors.purple,
+          ),
+          SizedBox(
+            width: 5,
+          ),
+          Text(
+            "Create\nRoom",
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 14, color: Colors.black),
+          ),
+          SizedBox(
+            width: 6,
+          ),
         ],
       ),
     );
