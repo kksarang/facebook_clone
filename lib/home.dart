@@ -1,4 +1,5 @@
 import 'package:facebook_clone/sections/headerButtonSection.dart';
+import 'package:facebook_clone/sections/roomSections.dart';
 import 'package:facebook_clone/sections/statusSection.dart';
 import 'package:facebook_clone/widgets/appBarButton.dart';
 import 'package:flutter/cupertino.dart';
@@ -47,6 +48,7 @@ class Home extends StatelessWidget {
               thickness: 10,
               color: Colors.grey.shade300,
             ),
+            RoomSection()
           ],
         ),
       ),

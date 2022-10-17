@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 class HeaderButtonSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Widget verticalDivider = const VerticalDivider(
+      thickness: 1,
+      color: Colors.grey,
+    );
     return SizedBox(
       height: 40,
       child: Row(
@@ -21,10 +25,7 @@ class HeaderButtonSection extends StatelessWidget {
               Text("Live"),
             ],
           ),
-          const VerticalDivider(
-            thickness: 1,
-            color: Colors.grey,
-          ),
+          verticalDivider,
           Row(
             children: const [
               Icon(
@@ -37,10 +38,7 @@ class HeaderButtonSection extends StatelessWidget {
               Text("Photo"),
             ],
           ),
-          const VerticalDivider(
-            thickness: 1,
-            color: Colors.grey,
-          ),
+          verticalDivider,
           Row(
             children: const [
               Icon(Icons.video_call, color: Colors.purple),
