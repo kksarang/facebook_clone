@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 class Avathar extends StatelessWidget {
   final String displayImageName;
   final bool displayStatus;
+  final bool displayBorder;
 
-  Avathar({required this.displayImageName, required this.displayStatus});
+  Avathar({required this.displayImageName, required this.displayStatus, this.displayBorder = false});
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +29,9 @@ class Avathar extends StatelessWidget {
     return Stack(
       children: [
         Container(
+          decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: displayBorder ? Border.all(color: Colors.blueAccent, width: 3) : Border()),
           padding: const EdgeInsets.only(left: 5, right: 4),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(100),

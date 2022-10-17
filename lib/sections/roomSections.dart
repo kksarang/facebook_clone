@@ -22,10 +22,12 @@ class RoomSection extends StatelessWidget {
           Avathar(
             displayImageName: networkTwo,
             displayStatus: true,
+            displayBorder: true,
           ),
           Avathar(
             displayImageName: networkThree,
             displayStatus: true,
+            displayBorder: true,
           ),
           Avathar(
             displayImageName: networkFour,
@@ -38,6 +40,7 @@ class RoomSection extends StatelessWidget {
           Avathar(
             displayImageName: six,
             displayStatus: true,
+            displayBorder: true,
           ),
           Avathar(
             displayImageName: aappu,

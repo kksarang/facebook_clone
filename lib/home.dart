@@ -1,7 +1,8 @@
 import 'package:facebook_clone/sections/headerButtonSection.dart';
 import 'package:facebook_clone/sections/roomSections.dart';
 import 'package:facebook_clone/sections/statusSection.dart';
-import 'package:facebook_clone/widgets/appBarButton.dart';
+import 'package:facebook_clone/sections/story_section.dart';
+import 'package:facebook_clone/widgets/circularButton.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -32,13 +33,13 @@ class Home extends StatelessWidget {
             style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: Colors.blue),
           ),
           actions: [
-            AppBarWidgetItem(
+            CircularWidgetItem(
               buttonAction: () {
                 print('Searching');
               },
               buttonIcon: Icons.search,
             ),
-            AppBarWidgetItem(
+            CircularWidgetItem(
               buttonAction: () {
                 print('Chating');
               },
@@ -57,6 +58,8 @@ class Home extends StatelessWidget {
             HeaderButtonSection(),
             thickDivider(),
             const RoomSection(),
+            thickDivider(),
+            const StorySection(),
             thickDivider(),
           ],
         ),

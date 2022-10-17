@@ -1,11 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class AppBarWidgetItem extends StatelessWidget {
+class CircularWidgetItem extends StatelessWidget {
   final IconData buttonIcon;
   final void Function() buttonAction;
 
-  AppBarWidgetItem({required this.buttonAction, required this.buttonIcon});
+  CircularWidgetItem({
+    required this.buttonAction,
+    required this.buttonIcon,
+  });
 
   @override
   Widget build(BuildContext context) {

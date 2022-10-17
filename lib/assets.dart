@@ -8,6 +8,8 @@ String sarang = "assets/images/sarang_one.jpg";
 String lap = "assets/posts/lap.png";
 String vishnu = "assets/posts/vishnu.jpeg";
 String justin = "assets/images/justin.jpg";
+String statusOne =
+    "https://scontent.fccj3-1.fna.fbcdn.net/v/t39.30808-6/307306213_5442319375864630_8409998204277445295_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=uSug_Tv2V3MAX-qE57U&_nc_ht=scontent.fccj3-1.fna&oh=00_AT-KI_vyJ58yvT1L2LR34-u5pfK-9rGouZFcLA_OUrPYRg&oe=6352D5DE";
 String aappu =
     "https://scontent.fccj3-1.fna.fbcdn.net/v/t1.6435-9/55455273_1219624954879492_4539287580079816704_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=03yDUGu_bZgAX-XUPnA&_nc_ht=scontent.fccj3-1.fna&oh=00_AT8dfZc6q4_FPtE6PcIcBcVpnEftWxmH-IH9GRl3J4Wb5A&oe=637495D7";
 String one =
