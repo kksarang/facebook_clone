@@ -8,6 +8,20 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Widget thickDivider() {
+      return Divider(
+        thickness: 10,
+        color: Colors.grey.shade300,
+      );
+    }
+
+    Widget thinDivider() {
+      return Divider(
+        thickness: 1,
+        color: Colors.grey.shade300,
+      );
+    }
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -28,7 +42,7 @@ class Home extends StatelessWidget {
               buttonAction: () {
                 print('Chating');
               },
-              buttonIcon: Icons.chat_bubble_outline,
+              buttonIcon: Icons.mark_chat_unread_sharp,
             )
           ],
         ),
@@ -39,16 +53,11 @@ class Home extends StatelessWidget {
               height: 2,
             ),
             const StatusSection(),
-            Divider(
-              thickness: 1,
-              color: Colors.grey.shade300,
-            ),
+            thinDivider(),
             HeaderButtonSection(),
-            Divider(
-              thickness: 10,
-              color: Colors.grey.shade300,
-            ),
-            RoomSection()
+            thickDivider(),
+            const RoomSection(),
+            thickDivider(),
           ],
         ),
       ),

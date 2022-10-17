@@ -1,3 +1,4 @@
+import 'package:facebook_clone/widgets/avathar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -9,13 +10,8 @@ class StatusSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: ClipRRect(
-        borderRadius: BorderRadius.circular(100),
-        child: Image.network(
-          networkOne,
-          width: 50,
-          height: 50,
-        ),
+      leading: Avathar(
+        displayImageName: networkOne,
       ),
       title: const TextField(
         decoration: InputDecoration(
